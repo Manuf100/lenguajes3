@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Vivero.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivero</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="CSS/SiteMaster.css" rel="stylesheet" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <header>
+            <div class="container">
+
+                <nav>
+                     <a href="Inicio.aspx" class="botonImagen"><img class="imagenLogo" src="IMAGENES/logo.png"  alt="Logo" /></a>
+                    <ul>
+                        <li><a href="Inicio.aspx">Inicio</a></li>
+                        <li>
+                            <a href="#">Productos</a>
+                            <ul>
+                                <li><a href="Plantas.aspx">Plantas</a></li>
+                                <li><a href="Semillas.aspx">Semillas</a></li>
+                                <li><a href="Macetas%20y%20Platos.aspx">Macetas y platos</a></li>
+                                <li><a href="Herramienta.aspx">Herramienta</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Vivero</a>
+                            <ul>
+                                <li><a href="Contacto.aspx">Contacto</a></li>
+                                <li><a href="Locales.aspx">Locales</a></li>
+                                <li><a href="Política%20de%20Devolución.aspx">Política de devolución</a></li>
+                                <li><a href="Preguntas%20Frecuentes.aspx">Preguntas Frecuentes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Tips%20y%20cuidados.aspx">Tips y cuidados</a></li>
+                    </ul>
+                </nav>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <a href="Compra.aspx"><lord-icon
+                    src="https://cdn.lordicon.com/mfmkufkr.json"
+                    trigger="hover"
+                    style="width:100px;height:100px">
+                </lord-icon></a>
+            </div>
+        </header>
+        <hr class="barra-header"/>
+        <main>
+         <div class="container body-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <hr />
+            </div>
+        </main>
+        <asp:PlaceHolder runat="server">
+            <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+        </asp:PlaceHolder>
+        <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.02,96.04 C148.52,176.83 348.85,-3.45 501.79,99.00 L500.00,149.74 L0.00,149.74 Z" style="stroke: none; fill: black;"></path></svg></div>
+        <footer>
+                            <section class="top">
+                                <ul>
+                                  <li>
+                                    <h3>PRODUCTOS</h3>
+                                      <a href="Plantas.aspx">Plantas</a>
+                                      <a href="Macetas%20y%20Platos.aspx">Macetas y Platos</a>
+                                      <a href="Semillas.aspx">Semillas</a>
+                                      <a href="Herramienta.aspx">Herramienta</a>
+                                  </li>
+                                  <li>
+                                      <h3>Vivero</h3>
+                                      <a href="Contacto.aspx">Contacto</a>
+                                      <a href="Locales.aspx">Locales</a>
+                                      <a href="Política%20de%20Devolución.aspx">Política de Devolución</a>
+                                      <a href="Preguntas%20Frecuentes.aspx">Preguntas Frecuentes</a>
+                                  </li>
+                                    <li>
+                                      <h3>Tips</h3>
+                                        <a href="Tips%20y%20cuidados.aspx">Tips y cuidados</a>
+                                  </li>
+                                </ul>
+                              </section>
+                              <section class="bottom">2024 Pagina hecha por Manuel Figueroa</section>
+                    </footer>
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
