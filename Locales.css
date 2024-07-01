@@ -1,0 +1,15 @@
+﻿.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta esto según sea necesario */
+    margin: 0;
+    padding-left:300px;
+}
+p{
+    text-align:center;
+}
+img {
+    float: right;
+    margin-right: 20px;
+}

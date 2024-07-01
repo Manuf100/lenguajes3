@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link href="CSS/inicio.css" rel="stylesheet" />
     <script src="JS/inicio.js"></script>
+
     <main>
         <div id="cincopa_4fb880" style="width: 1125px">...</div><script type="text/javascript">
                                                                     var cpo = []; cpo["_object"] = "cincopa_4fb880"; cpo["_fid"] = "AkAAURfsD1rd";
@@ -28,7 +29,7 @@
                 <strong>&#x21bb;</strong>
               </div>
               <div class="back" id="uno-iniciob">
-                 <a href="#" class="ia">PLANTAS</a><br /><br /><br /><br /><br /><br />
+                 <a href="Plantas.aspx" class="ia">PLANTAS</a><br /><br /><br /><br /><br /><br />
                 <p class="pinfo">Nuestras mejores plantas</p>
               </div>
             </div>
@@ -41,7 +42,7 @@
                 <strong>&#x21bb;</strong>
               </div>
               <div class="back" id="dos-iniciob">
-                <a href="#" class="ia">SEMILLAS</a><br /><br /><br /><br /><br /><br />
+                <a href="Semillas.aspx" class="ia">SEMILLAS</a><br /><br /><br /><br /><br /><br />
                  <p class="pinfo">Tenemos semillas de todo tipo</p>
               </div>
             </div>
@@ -53,7 +54,7 @@
                 <strong>&#x21bb;</strong>
               </div>
               <div class="back" id="tres-iniciob">
-                <a href="#" class="ia">MACETAS</a><br /><br /><br /><br /><br /><br />
+                <a href="Macetas%20y%20Platos.aspx" class="ia">MACETAS</a><br /><br /><br /><br /><br /><br />
                 <p class="pinfo">Tenemos distintas medidas</p>
               </div>
             </div>
@@ -65,7 +66,7 @@
                 <strong>&#x21bb;</strong>
               </div>
               <div class="back" id="cuatro-iniciob">
-                <a href="#" class="ia">HERRAMIENTAS</a><br /><br /><br /><br /><br /><br />
+                <a href="Herramienta.aspx" class="ia">HERRAMIENTAS</a><br /><br /><br /><br /><br /><br />
                 <p class="pinfo">Herramientas de calidad</p>
               </div>
             </div>

@@ -1,0 +1,15 @@
+Resumen de Compra:
+
+Nombre: Manuel
+Apellido: Figueroa
+Email: manufigueroa169@gmail.com
+Dirección: AP, 45
+Ciudad: salta
+Provincia: salta
+País: argentina
+Código Postal: 4400
+Medio de Pago: Efectivo
+Comentarios: ,
+
+Productos:
+SEMILLAS DE HIERBAS PARA GATOS Y PERROS 100g - Cantidad: 1
